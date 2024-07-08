@@ -900,7 +900,8 @@ footer .footer-ul li:first-child {
     flex-direction: column;
   }
   .subscribe {
-    padding-left: 120px;
+    padding-left: 0px;
+    width: 196px !important;
   }
   .our-journey,
   .what-we-do-page {
@@ -918,5 +919,9 @@ footer .footer-ul li:first-child {
   }
   .contact-us-text {
     padding: 100px;
+  }
+  .right-video,
+  .what-we-do-img {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=main.css.map */

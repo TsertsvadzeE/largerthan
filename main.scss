@@ -973,7 +973,8 @@ footer {
   }
 
   .subscribe {
-    padding-left: 120px;
+    padding-left: 0px;
+    width: 196px !important;
   }
 
   .our-journey,
@@ -995,5 +996,10 @@ footer {
 
   .contact-us-text {
     padding: 100px;
+  }
+
+  .right-video,
+  .what-we-do-img {
+    width: 100% !important;
   }
 }
