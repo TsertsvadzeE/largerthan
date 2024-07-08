@@ -827,15 +827,27 @@ footer .footer-ul li:first-child {
   .navbar-list,
   .navbar-btn,
   .header-statistics,
-  .next-event-line {
+  .next-event-line,
+  .event-line {
     display: none;
   }
   .navbar-toggle {
     display: flex;
   }
+  .navbar-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 12px;
+    right: 0;
+  }
   .video-btn,
   .functions,
-  .footer-ul {
+  .footer-ul,
+  .bottom-row {
     display: none !important;
   }
   .header-text {
@@ -849,9 +861,6 @@ footer .footer-ul li:first-child {
   }
   .home-heading {
     text-align: center;
-  }
-  .bottom-row {
-    display: none !important;
   }
   .top-row {
     flex-direction: column;
@@ -870,7 +879,8 @@ footer .footer-ul li:first-child {
   .section-title {
     margin: 0 auto 32px 0;
   }
-  h2 {
+  h2,
+  h1 {
     text-align: center;
   }
   .primary-btn {
@@ -896,7 +906,8 @@ footer .footer-ul li:first-child {
     align-items: center;
   }
   footer,
-  .our-journey {
+  .our-journey,
+  .info-contact {
     flex-direction: column;
   }
   .subscribe {
@@ -904,11 +915,14 @@ footer .footer-ul li:first-child {
     width: 196px !important;
   }
   .our-journey,
-  .what-we-do-page {
+  .what-we-do-page,
+  .contact-us-text,
+  .event {
     padding: 10px;
   }
   .journey-text,
-  .what-we-do-page-text {
+  .what-we-do-page-text,
+  .our-journey {
     width: 100% !important;
     margin: 5px !important;
   }
@@ -917,11 +931,15 @@ footer .footer-ul li:first-child {
     margin-top: 5px;
     width: 100% !important;
   }
-  .contact-us-text {
-    padding: 100px;
-  }
   .right-video,
-  .what-we-do-img {
+  .what-we-do-img,
+  .contact-us-text-info {
     width: 100% !important;
+  }
+  footer {
+    padding: 80px;
+  }
+  .event-title {
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */
