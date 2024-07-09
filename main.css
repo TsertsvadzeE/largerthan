@@ -125,11 +125,11 @@ h6 {
 .navbar {
   overflow: hidden;
   background-color: #ffffff;
-  height: 87px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 271px;
+  padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 .navbar-logo {
@@ -580,6 +580,7 @@ h6 {
   color: #000000;
   background-color: #f2c94c;
   color: #000000 !important;
+  white-space: nowrap;
 }
 .cta-content .cta-btn .primary-btn:hover {
   color: #f2c94c;
@@ -838,11 +839,7 @@ footer .footer-ul li:first-child {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    position: absolute;
-    top: 12px;
-    right: 0;
+    margin-bottom: 10px;
   }
   .video-btn,
   .functions,

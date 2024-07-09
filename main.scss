@@ -121,11 +121,11 @@ h6 {
 .navbar {
   overflow: hidden;
   background-color: $white;
-  height: 87px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 271px;
+  padding: 20px 0;
   @include border-bottom;
 
   &-logo {
@@ -601,6 +601,7 @@ h6 {
       .primary-btn {
         @include primary-button;
         color: $black !important;
+        white-space: nowrap;
         &:hover {
           color: $orange !important;
         }
@@ -900,11 +901,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    background-color: $white;
-    border-radius: 8px;
-    position: absolute;
-    top: 12px;
-    right: 0;
+    margin-bottom: 10px;
   }
 
   .video-btn,
