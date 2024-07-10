@@ -34,7 +34,6 @@ li {
   line-height: 18.75px;
   letter-spacing: 2px;
   color: #1d2130;
-  margin-bottom: 32px;
 }
 
 /* || paragraph */
@@ -82,6 +81,12 @@ h5 {
 
 h6 {
   font-size: 12px;
+}
+
+/* || container class */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /* || video play button */
@@ -195,7 +200,6 @@ h6 {
   gap: 48px;
   width: 640px;
   padding-top: 128px;
-  margin-left: 110px;
   z-index: 2;
 }
 .header .home-heading {
@@ -249,7 +253,6 @@ h6 {
   font-weight: 500;
   line-height: 21.09px;
   color: #ffffff;
-  padding: 0 110px;
   margin-top: 192px;
   z-index: 2;
 }
@@ -266,19 +269,26 @@ h6 {
 
 /* || About section */
 .about {
-  padding: 80px 100px;
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   gap: 64px;
 }
 .about .top-row {
   display: flex;
+  justify-content: space-between;
   gap: 80px;
   padding-left: 100px;
 }
 .about .top-row .left-text {
-  max-width: 600px;
+  width: 100%;
   margin-top: 90px;
+}
+.about .top-row .left-text-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
 }
 .about .top-row .left-text .primary-btn {
   margin-top: 48px;
@@ -289,13 +299,10 @@ h6 {
   color: #f2c94c;
   background-color: #000000;
 }
-.about .top-row .left-text .paragraph {
-  margin-top: 32px;
-}
 .about .top-row .right-video {
   position: relative;
   height: 578.34px;
-  width: 480px;
+  width: 100%;
   background: url(./images/about-section-photo.png) center center no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -355,20 +362,26 @@ h6 {
 /* || What We Do Section */
 .what-we-do {
   background-color: #fcedc6;
-  padding: 96px 100px 96px 200px;
+  padding: 96px 0;
+}
+.what-we-do .container {
   display: flex;
+  justify-content: space-between;
   gap: 70px;
 }
-.what-we-do-text {
-  max-width: 600px;
+.what-we-do .container .what-we-do-text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-left: 100px;
+  max-width: 100%;
 }
-.what-we-do-text .text {
+.what-we-do .container .what-we-do-text .text {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 32px;
 }
-.what-we-do-text .functions {
+.what-we-do .container .what-we-do-text .functions {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -376,15 +389,15 @@ h6 {
   border-left: 2px solid #e5e5e5;
   padding-left: 76px;
 }
-.what-we-do-text .functions .function-title {
+.what-we-do .container .what-we-do-text .functions .function-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28.13px;
   margin-bottom: 14px;
 }
 .what-we-do-img {
-  width: 480px;
-  height: 600px;
+  width: 100%;
+  height: 658px;
   background: url(./images/what-we-do.jpeg) center center no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -393,21 +406,30 @@ h6 {
 
 /* || Project Section */
 .project {
-  padding: 100px 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-top: 100px;
 }
-.project .project-now {
-  margin-top: 65px;
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-left: 100px;
+  max-width: 740px;
+}
+.project-now {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 24px;
 }
-.project .project-now .project-card {
+.project-now .project-card {
   position: relative;
   z-index: 1;
   height: 450px;
   padding: 80px 48px 48px 48px;
 }
-.project .project-now .project-card .card-overlay {
+.project-now .project-card .card-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -418,31 +440,31 @@ h6 {
   border-radius: 20px;
   z-index: -1;
 }
-.project .project-now .project-card .paragraph {
+.project-now .project-card .paragraph {
   color: #ffffff;
   margin-top: 16px;
 }
-.project .project-now .project-card .secondary-btn {
+.project-now .project-card .secondary-btn {
   position: absolute;
   bottom: 48px;
   color: #1d2130;
   background-color: #ffffff;
 }
-.project .project-now .project-card .secondary-btn:hover {
+.project-now .project-card .secondary-btn:hover {
   color: #ffffff;
   background-color: #1d2130;
 }
-.project .project-now .bg1 {
+.project-now .bg1 {
   background: url(./images/bg1.jpeg) center center no-repeat;
   background-size: cover;
   border-radius: 20px;
 }
-.project .project-now .bg2 {
+.project-now .bg2 {
   background: url(./images/bg2.jpeg) center center no-repeat;
   background-size: cover;
   border-radius: 20px;
 }
-.project .project-now .bg3 {
+.project-now .bg3 {
   background: url(./images/bg3.jpeg) center center no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -450,7 +472,10 @@ h6 {
 
 /* || Event Section */
 .event {
-  padding: 188px 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 188px 0;
 }
 .event-title {
   display: flex;
@@ -474,13 +499,12 @@ h6 {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  margin-top: 48px;
 }
 .event-now .event-card {
   display: flex;
   gap: 24px;
   height: 190px;
-  max-width: 620px;
+  width: 100%;
   padding: 32px;
   background-color: #f2c94c;
   border-radius: 20px;
@@ -527,13 +551,13 @@ h6 {
 }
 .event-now .event-card .event-info h3 {
   color: #1d2130;
-  width: 380px;
+  width: 100%;
 }
 
 /* || CTA Section */
 .cta {
   position: relative;
-  margin: 200px 100px 150px 100px;
+  margin-bottom: 154px;
   background: url(./images/bg1.jpeg) center center no-repeat;
   background-size: cover;
   height: 384px;
@@ -557,12 +581,11 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 200px;
+  gap: 32px;
 }
 .cta-content h2 {
   color: #ffffff;
   text-align: center;
-  margin-bottom: 32px;
 }
 .cta-content .cta-btn {
   display: flex;
@@ -592,26 +615,28 @@ h6 {
 
 /* || Footer */
 footer {
+  background-color: #0b0706;
+}
+footer .container {
   display: flex;
   gap: 120px;
   color: #ffffff;
-  background-color: #0b0706;
-  padding: 96px 200px 96px 100px;
+  padding: 96px 0;
 }
-footer .footer-logo {
+footer .container .footer-logo {
   display: flex;
 }
-footer .subscribe {
+footer .container .subscribe {
   font-size: 40px;
   font-weight: 700;
   line-height: 56px;
-  width: 440px;
+  max-width: 440px;
 }
-footer .footer-ul {
+footer .container .footer-ul {
   display: flex;
   gap: 88px;
 }
-footer .footer-ul .footer-li {
+footer .container .footer-ul .footer-li {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -621,7 +646,7 @@ footer .footer-ul .footer-li {
   line-height: 22.4px;
   cursor: pointer;
 }
-footer .footer-ul li:first-child {
+footer .container .footer-ul li:first-child {
   font-size: 16px;
   font-weight: 700;
   line-height: 25.6px;
@@ -630,26 +655,25 @@ footer .footer-ul li:first-child {
 /* || About Us Page */
 .our-journey {
   display: flex;
-  margin: 210px 110px;
+  justify-content: space-between;
+  gap: 48px;
+  margin-top: 124px;
   padding: 64px 36px;
   background-color: #f2c94c;
   border-radius: 20px;
-  height: 580px;
 }
 .our-journey .journey-text {
-  margin: 50px;
+  padding-left: 60px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 32px;
-  width: 490px;
+  width: 100%;
 }
 .our-journey .journey-text .we-raised {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-.our-journey .journey-text .we-raised .section-title {
-  margin-bottom: 0;
 }
 .our-journey .journey-text .journey-data {
   display: flex;
@@ -675,7 +699,7 @@ footer .footer-ul li:first-child {
 }
 .our-journey .journey-img {
   height: 450px;
-  width: 612px;
+  width: 100%;
   background: url(./images/about-us.png) center center no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -683,29 +707,17 @@ footer .footer-ul li:first-child {
 
 /* || what we do page */
 .what-we-do-page {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 150px 100px 0 200px;
-}
-.what-we-do-page-text {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.what-we-do-page-text .section-title {
-  margin-bottom: 0;
-}
-.what-we-do-page-text h1 {
-  max-width: 460px;
+  background-color: transparent;
 }
 .what-we-do-page-img {
   background: url(./images/bg-img.jpeg) center center no-repeat;
   background-size: cover;
-  width: 480px;
+  width: 100%;
   height: 380px;
   border-radius: 20px;
+}
+.what-we-do-page h1 {
+  margin-bottom: 18px;
 }
 
 /* || media page */
@@ -718,9 +730,12 @@ footer .footer-ul li:first-child {
   display: flex;
   flex-direction: column;
 }
+.contact-us .section-title {
+  margin-bottom: 26px;
+}
 .contact-us-text {
   background-color: #fcedc6;
-  padding: 76px 200px 100px 200px;
+  padding: 76px 0 100px 0;
 }
 .contact-us-text-info {
   display: flex;
@@ -756,68 +771,37 @@ footer .footer-ul li:first-child {
 }
 
 /* || media */
-@media (max-width: 1300px) {
+@media (max-width: 1280px) {
+  .container {
+    margin: 0 10px;
+  }
+  .cta {
+    margin-bottom: 154px;
+  }
   .navbar {
     gap: 150px;
   }
-  .about {
-    padding: 80px 50px;
-  }
-  .what-we-do {
-    padding-left: 150px;
-    padding-right: 60px;
+  .top-row,
+  .what-we-do-text,
+  .project-text,
+  .journey-text {
+    padding-left: 0 !important;
   }
   .left-text {
-    max-width: 500px;
-  }
-  .project {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-  .event-now {
-    flex-direction: column;
-  }
-  .what-we-do-page {
-    padding: 100px 50px;
-    gap: 24px;
+    margin-top: 0 !important;
   }
 }
 @media (max-width: 1000px) {
   .navbar {
     gap: 50px;
   }
-  .about {
-    padding: 50px 10px;
-  }
-  .top-row {
-    padding-left: 0px !important;
-    gap: 5px !important;
-  }
-  .what-we-do,
-  .project {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .project .secondary-btn {
-    bottom: 15px !important;
-  }
-  .cta h2 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .cta-content {
-    padding: 0 100px;
+  footer .container {
+    gap: 100px;
   }
   .subscribe {
-    font-size: 14px !important;
-    line-height: 19.6px !important;
-  }
-  footer {
-    gap: 70px;
-    padding: 96px;
-  }
-  .what-we-do-page-text {
-    width: 350px;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 36px !important;
   }
 }
 /* || iPhone SE - 1 media */
@@ -829,7 +813,8 @@ footer .footer-ul li:first-child {
   .navbar-btn,
   .header-statistics,
   .next-event-line,
-  .event-line {
+  .event-line,
+  .project-text h2 {
     display: none;
   }
   .navbar-toggle {
@@ -852,29 +837,34 @@ footer .footer-ul li:first-child {
     align-items: center;
     gap: 30px;
     width: 100%;
-    height: 100%;
-    margin: 0;
+    height: 735px;
     padding: 0;
   }
-  .home-heading {
-    text-align: center;
-  }
-  .top-row {
+  .top-row,
+  .what-we-do .container,
+  .our-journey {
     flex-direction: column;
     align-items: center;
     gap: 80px !important;
   }
   .left-text,
-  .what-we-do,
   .project-now,
-  .what-we-do-page,
-  .what-we-do-page-text {
+  .event-now {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  footer .container,
+  .info-contact {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .subscribe {
+    padding-left: 44px;
+    font-size: 16px;
+  }
   .section-title {
-    margin: 0 auto 32px 0;
+    margin: 0 auto 0 0;
   }
   h2,
   h1 {
@@ -886,57 +876,29 @@ footer .footer-ul li:first-child {
   .what-we-do-img {
     margin-top: 0;
   }
-  .project .secondary-btn {
-    bottom: 48px !important;
-  }
   .event h3 {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 18px;
-    width: 146px !important;
   }
   .cta {
-    margin: 10px;
+    margin-bottom: 64px;
   }
   .cta-btn {
     gap: 24px !important;
     flex-direction: column;
     align-items: center;
   }
-  footer,
-  .our-journey,
-  .info-contact {
-    flex-direction: column;
+  .cta h2 {
+    font-size: 36px;
+    line-height: 36px;
   }
-  .subscribe {
-    padding-left: 0px;
-    width: 196px !important;
-  }
-  .our-journey,
-  .what-we-do-page,
-  .contact-us-text,
-  .event {
-    padding: 10px;
-  }
-  .journey-text,
-  .what-we-do-page-text,
-  .our-journey {
-    width: 100% !important;
-    margin: 5px !important;
-  }
-  .journey-img,
-  .what-we-do-page-img {
-    margin-top: 5px;
-    width: 100% !important;
-  }
-  .right-video,
-  .what-we-do-img,
-  .contact-us-text-info {
-    width: 100% !important;
-  }
-  footer {
-    padding: 80px;
+  .journey-data {
+    gap: 8px;
   }
   .event-title {
     justify-content: center;
+  }
+  .contact-us-text-info {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
