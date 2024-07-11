@@ -32,10 +32,10 @@
   color: $white;
   background-color: $dark-grey;
   padding: 12px 32px !important;
+  border: 1px solid $dark-grey;
   &:hover {
     color: $dark-grey;
     background-color: $white;
-    border: 1px solid $dark-grey;
   }
 }
 

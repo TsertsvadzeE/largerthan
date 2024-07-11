@@ -92,6 +92,7 @@ h6 {
 /* || video play button */
 .play {
   position: relative;
+  cursor: pointer;
 }
 .play .circle {
   width: 100%;
@@ -140,6 +141,7 @@ h6 {
 .navbar-logo {
   display: flex;
   line-height: 44px;
+  cursor: pointer;
 }
 .navbar-list ul {
   display: flex;
@@ -155,11 +157,11 @@ h6 {
   color: #ffffff;
   background-color: #1d2130;
   padding: 12px 32px !important;
+  border: 1px solid #1d2130;
 }
 .navbar-btn:hover {
   color: #1d2130;
   background-color: #ffffff;
-  border: 1px solid #1d2130;
 }
 .navbar-toggle {
   display: none;

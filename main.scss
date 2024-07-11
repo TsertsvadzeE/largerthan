@@ -87,6 +87,7 @@ h6 {
 
 .play {
   position: relative;
+  cursor: pointer;
 
   .circle {
     width: 100%;
@@ -136,6 +137,7 @@ h6 {
   &-logo {
     display: flex;
     line-height: 44px;
+    cursor: pointer;
   }
 
   &-list ul {
